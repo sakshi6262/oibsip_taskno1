@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="calculator">
+            <h1>Calculate Here !</h1>
+            <form>
+                <div class="display">
+                    <input type="text" id="a" name="display">
+                </div>
+                <div>
+                    <input id="ab" type="button" value="AC" onclick="clr()">
+                    <input id="ab" type="button" value="DE" onclick="slice()">
+                    <input id="ab" type="button" value="." onclick="pick(`.`)">
+                    <input id="ab" type="button" value="/" onclick="pick(`/`)">
+                </div>
+                <div>
+                    <input id="ab" type="button" value="7" onclick="pick(7)">
+                    <input id="ab" type="button" value="8" onclick="pick(8)">
+                    <input id="ab" type="button" value="9" onclick="pick(9)">
+                    <input id="ab" type="button" value="*" onclick="pick(`*`)">
+                </div>
+                <div>
+                    <input id="ab" type="button" value="4" onclick="pick(4)">
+                    <input id="ab" type="button" value="5" onclick="pick(5)">
+                    <input id="ab" type="button" value="6" onclick="pick(6)">
+                    <input id="ab" type="button" value="-" onclick="pick(`-`)">
+                </div>
+                <div>
+                    <input id="ab" type="button" value="1" onclick="pick(1)">
+                    <input id="ab" type="button" value="2" onclick="pick(2)">
+                    <input id="ab" type="button" value="3" onclick="pick(3)">
+                    <input id="ab" type="button" value="+" onclick="pick(`+`)">
+                </div>
+                <div>
+                    <input id="ab" type="button" value="00" onclick="pick(`00`)">
+                    <input id="ab" type="button" value="0" onclick="pick(0)">
+                    <input id="ab" type="button" value="=" class="equal" onclick="solve()">
+                </div>
+
+
+            </form>
+        </div>
+
+    </div>
+
+    <script src="app1.js"></script>
+</body>
+
+</html>
